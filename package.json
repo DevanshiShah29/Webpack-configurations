@@ -4,7 +4,8 @@
   "description": "This repo contains code for basic webpack configuration with splitting up development and production build modes as well as setting up a dev server.",
   "main": "index.js",
   "scripts": {
-    "start": "webpack"
+    "start": "webpack-dev-server --open --hot --mode development",
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
@@ -17,13 +18,17 @@
   },
   "homepage": "https://github.com/DevanshiShah29/Webpack-configurations#readme",
   "devDependencies": {
-    "@babel/core": "^7.12.10",
-    "@babel/preset-env": "^7.12.11",
-    "@babel/preset-react": "^7.12.10",
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-react": "^7.12.5",
     "babel-loader": "^8.2.2",
-    "webpack": "^5.12.1",
-    "webpack-cli": "^4.3.1",
-    "webpack-dev-server": "^3.11.1"
+    "css-loader": "^5.0.1",
+    "sass": "^1.32.2",
+    "sass-loader": "^10.1.0",
+    "style-loader": "^2.0.0",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.1.1",
+    "webpack-dev-server": "^3.1.4"
   },
   "dependencies": {
     "html-webpack-plugin": "^4.5.1",

@@ -4,8 +4,8 @@
   "description": "This repo contains code for basic webpack configuration with splitting up development and production build modes as well as setting up a dev server.",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --open --hot --mode development",
-    "build": "webpack --mode production"
+    "start": "webpack-dev-server --open --hot --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js"
   },
   "repository": {
     "type": "git",
@@ -28,7 +28,8 @@
     "style-loader": "^2.0.0",
     "webpack": "^4.44.2",
     "webpack-cli": "^3.1.1",
-    "webpack-dev-server": "^3.1.4"
+    "webpack-dev-server": "^3.1.4",
+    "webpack-merge": "^5.7.3"
   },
   "dependencies": {
     "html-webpack-plugin": "^4.5.1",

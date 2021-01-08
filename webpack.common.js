@@ -6,12 +6,6 @@ module.exports = {
   //entry file 
   entry: "./src/index.js",
 
-  //file name which will be generated in dist 
-  output: {
-    path: path.join(__dirname, "/dist"),
-    filename: "bundle.js",
-    publicPath: "/",
-  },
   //loaders
   module: {
     rules: [
